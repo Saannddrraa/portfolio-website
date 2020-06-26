@@ -1,0 +1,45 @@
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+@mixin bg-img {
+    position: relative;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+@mixin breakpoint ($value) {
+    @if $value == 'phone' { // mobile
+    @media only screen and (max-width: 47.938rem) {
+    @content;
+    }
+    }
+    
+    @else if $value == 'tablet' { // tablet
+    @media only screen and (min-width: 48rem) and (max-width: 64rem) {
+    @content;
+    }
+    }
+    
+    @else if $value == 'touch' { // mobile and tablet
+    @media only screen and (max-width: 64rem) {
+    @content;
+    }
+    }
+    
+    @else if $value == 'desktop' { // desktop
+    @media only screen and (min-width: 64.063rem) {
+    @content
+    }
+    }
+    
+    @else if $value == 'desktop-tablet' { // desktop and tablet
+    @media only screen and (min-width: 48rem) {
+    @content
+    }
+    }
+    }

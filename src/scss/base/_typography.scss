@@ -1,0 +1,42 @@
+html {
+    font-size: 62.5%;
+    line-height: 1.2;
+}
+
+@font-face {
+    font-family: 'gentium_book_basicbold';
+    src: url('../fonts/genbkbasb-webfont.woff2') format('woff2'),
+        url('../fonts/genbkbasb-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'yeseva_oneregular';
+    src: url('../fonts/yesevaone-regular_v2-webfont.woff2') format('woff2'),
+        url('../fonts/yesevaone-regular_v2-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.heading-primary {
+    font-family: $yeseva;
+    font-size: 4rem;
+    color: $color-white;
+    animation: flash;
+    animation-duration: 2s;
+    line-height: 1.4;
+    margin-bottom: 1rem;
+
+    @include breakpoint(phone) {
+        font-size: 3rem;
+    }
+}
+
+.heading-primary--up {
+    display: block;
+}
+
+.heading-primary--down {
+    display: block;
+}

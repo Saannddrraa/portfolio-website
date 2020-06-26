@@ -1,0 +1,42 @@
+.btn {
+    display: inline-block;
+    font-family: 'latoregular';
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    cursor: pointer;
+    padding: 2rem 5rem;
+    color: $color-white;
+    transition: $transition;
+
+    @include breakpoint(phone) {
+        display: block;
+        font-size: 1.4rem;
+        padding: 2rem;
+    }
+
+    &--black {
+        background: rgba(0, 0, 0, 0.7);
+        border: 2px solid $color-black;
+        animation: pulse;
+        animation-duration: 2s;
+        animation-delay: 2s;
+
+        &:hover {
+            background: $color-yellow-2;
+        }
+    }
+}
+
+.btn-dark {
+    background: $color-black;
+    color: $color-yellow-2;
+    display: block;
+    padding: 0.5rem 1rem;
+    border: 0;
+    margin-bottom: 0.3rem;
+    font-family: 'gentium_book_basicbold';
+    &:hover {
+        background: $color-grey-light;
+        color: $color-black;
+    }
+}

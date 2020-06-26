@@ -1,0 +1,28 @@
+.container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 4rem;
+}
+
+.py-1 {
+    padding: 10rem 0;
+}
+
+.heading-secondary {
+    font-family: $yeseva;
+    font-size: 2.6rem;
+    margin-bottom: 1.1rem;
+
+    @include breakpoint(phone) {
+        font-size: 3.2rem;
+    }
+}
+
+.heading-secondary--white {
+    color: $color-white;
+}
+
+.heading-secondary--yellow {
+    color: $color-yellow-2;
+    text-align: center;
+}

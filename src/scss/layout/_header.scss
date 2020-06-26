@@ -1,0 +1,12 @@
+.header {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+}
+
+.logo-box {
+
+    @include breakpoint(phone) {
+        padding: 0.4rem 0 0 2rem;
+    }
+}
